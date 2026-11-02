@@ -1,78 +1,125 @@
-Sales Performance Analysis Dashboard | Tableau
-An interactive Tableau dashboard built to explore sales performance across markets, months, customers, and products. The project brings together transaction data and supporting customer, date, market, and product tables to present key business metrics in one place.
+# 📊 Sales Performance Analysis Dashboard | Tableau
 
-Project Overview
-Objective: Analyze sales performance and make it easier to identify high-performing markets, monthly revenue patterns, and the customers and products contributing most to sales.
+## 📌 Project Overview
 
-Tools: Tableau Public / Tableau Desktop, CSV datasets, Tableau extract (Hyper).
-Dashboard Features
-- Total Revenue: headline revenue KPI.
-- Sales Quantity: headline units-sold KPI.
-- Revenue by Market: compares revenue across markets.
-- Sales Trend by Month: shows monthly revenue movement.
-- Top 5 Customers: highlights the leading customers by the measure used in the workbook.
-- Top 5 Products: highlights the leading products by the measure used in the workbook.
-- Year and Month Filters: allow users to explore different time periods.
-Preview Metrics
-The supplied dashboard screenshot displays the following headline values:
-KPI	Value shown
-Total Revenue	$3.26M
-Sales Quantity	4,233
+This project focuses on analyzing sales performance using **Tableau**. I developed an interactive dashboard to understand revenue trends, compare market performance, and identify the top-performing customers and products.
 
+The dashboard transforms sales data into meaningful visual insights that can help businesses monitor performance and make data-driven decisions.
 
-These are values visible in the saved dashboard screenshot, not independently recalculated figures. Results may change when filters or the underlying data are changed.
-Repository Structure
- tableau-sales-performance-analysis/
- ├── README.md
- ├── .gitignore
- ├── dashboard/
- │   └── Sales_Performance_Analysis.twbx
- ├── data/
- │   ├── customers.csv
- │   ├── dates.csv
- │   ├── markets.csv
- │   ├── products.csv
- │   └── transactions.csv
- ├── docs/
- │   ├── DATA_DICTIONARY.md
- │   └── PROJECT_NOTES.md
- └── images/
-     └── dashboard-preview.png
-How to Open the Dashboard
-1. Download or clone this repository.
-2. Open dashboard/Sales_Performance_Analysis.twbx using Tableau Desktop or Tableau Public (if supported by your installed version).
-3. The .twbx is a packaged workbook and includes a Tableau data extract, so it should open without recreating the original local CSV connection.
-4. Use the year and month filters to explore the dashboard.
-If Tableau asks to locate a data source, connect it to the CSV files in the data/ folder and check the table relationships before refreshing the extract.
+## 🎯 Business Objectives
 
-Data Model
-The project contains five CSV files:
-- transactions.csv – transaction-level sales, quantity, date, customer, market, product, and currency fields.
-- customers.csv – customer identifiers, names, and customer type.
-- dates.csv – calendar attributes such as year and month.
-- markets.csv – market names and geographic zones.
-- products.csv – product identifiers and product type.
-See [Data Dictionary](docs/DATA_DICTIONARY.md) for field descriptions.
-Analysis Questions
-This dashboard is designed to help answer questions such as:
-1. Which markets contribute the most revenue?
+- Analyze overall sales revenue and quantity.
+- Identify the highest revenue-generating markets.
+- Understand monthly revenue trends.
+- Identify the top 5 customers.
+- Identify the top 5 products.
+- Explore sales performance using Year and Month filters.
+
+## 🛠️ Tools & Technologies
+
+- **Tableau Public:** Dashboard development and data visualization.
+- **CSV / Excel:** Dataset handling.
+- **Data Analytics:** KPI analysis and business insights.
+
+## 📊 Dashboard Preview
+
+![Sales Performance Dashboard](images/dashboard-preview.png)
+
+## 📈 Key Performance Indicators (KPIs)
+
+| KPI | Dashboard Value |
+|---|---:|
+| Total Revenue | 3.26M |
+| Sales Quantity | 4,233 |
+
+## 📌 Dashboard Features
+
+### 1. Revenue by Market
+- Compares revenue across different markets.
+- Identifies the highest-performing market.
+- Delhi NCR contributes the highest visible revenue.
+
+### 2. Monthly Revenue Analysis
+- Visualizes revenue trends across different months.
+- Helps identify high- and low-performing periods.
+- Supports time-based performance analysis.
+
+### 3. Top 5 Customer Analysis
+- Identifies the top five customers.
+- Compares customer contribution to sales.
+
+### 4. Top 5 Product Analysis
+- Highlights the top five products.
+- Helps identify products with the highest sales performance.
+
+### 5. Interactive Filters
+- Year filter
+- Month filter
+
+These filters allow users to explore sales performance across different periods.
+
+## 💡 Key Business Questions
+
+1. Which market generates the highest revenue?
 2. How does revenue change month by month?
-3. Which five customers contribute most to the selected sales measure?
+3. Who are the top five customers?
 4. Which five products perform best?
-5. How do the results change when a year or month is selected?
-Important Validation Before Publishing
-Please verify the Sales Quantity by Markets worksheet before treating its values as final. In the supplied screenshot, its labels appear as currency amounts and closely match the Revenue by Market values. Confirm that the worksheet uses SUM(sales_qty) rather than SUM(sales_amount), and format the axis and labels as units rather than currency.
+5. How does sales performance vary across different years?
 
-Also check whether transaction currencies have been converted to a common currency before aggregating revenue. If INR and USD are both present, do not add them together as if they were the same currency. Document the conversion method if one has been applied.
-Skills Demonstrated
-- Tableau dashboard development
-- KPI reporting and data visualization
-- Sales and market performance analysis
-- Customer and product performance analysis
-- Working with multiple related datasets
-- Interactive filtering and business storytelling
-Author
-Amaan Ali
-Aspiring Data Analyst | SQL | Excel | Power BI | Tableau
+## 🧠 Skills Demonstrated
 
-GitHub: AmaanALI2005
+- Data Visualization
+- Tableau Dashboard Development
+- KPI Analysis
+- Sales Performance Analysis
+- Customer Analysis
+- Product Analysis
+- Business Intelligence
+- Data Storytelling
+
+## 📂 Project Files
+
+```text
+Sales-Performance-Analysis/
+│
+├── dashboard/
+│   └── sales_analysis.twbx
+│
+├── data/
+│   ├── customers.csv
+│   ├── dates.csv
+│   ├── markets.csv
+│   ├── products.csv
+│   └── transactions.csv
+│
+├── images/
+│   └── dashboard-preview.png
+│
+├── docs/
+│
+└── README.md
+```
+
+## 🚀 How to Use This Project
+
+1. Clone or download this repository.
+2. Open Tableau Desktop or Tableau Public.
+3. Open the `sales_analysis.twbx` workbook.
+4. Explore the dashboard.
+5. Use Year and Month filters to analyze different periods.
+
+## 👨‍💻 About Me
+
+**Amaan Ali**
+
+Aspiring Data Analyst | Tableau | SQL | Power BI | Advanced Excel
+
+I am passionate about transforming raw data into meaningful insights and building interactive dashboards that support business decision-making.
+
+🔗 GitHub: https://github.com/AmaanALI2005
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository!
+
+**#DataAnalytics #Tableau #SalesAnalysis #DataVisualization #BusinessIntelligence**
