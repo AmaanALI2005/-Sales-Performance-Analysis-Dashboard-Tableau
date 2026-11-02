@@ -116,6 +116,7 @@ Aspiring Data Analyst | Tableau | SQL | Power BI | Advanced Excel
 
 I am passionate about transforming raw data into meaningful insights and building interactive dashboards that support business decision-making.
 
+🔗 Linkedin: www.linkedin.com/in/amaan-ali-64a1a832a
 🔗 GitHub: https://github.com/AmaanALI2005
 
 ---
